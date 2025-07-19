@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+.raleway {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* shared style */
+.display-flex {
+    display: flex;
+}
+
+.text-color-1 {
+    color: #3A3A3A;
+}
+
+.text-color-2 {
+    color: #787885;
+}
+
+.btn-primary {
+    background-color: #E02C6D;
+    color: white;
+    padding: 20px 25px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 25px;
+    border: none;
+}
+
+
+/* header related style */
+
+.navbar {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    list-style: none;
+    margin-right: 30px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.navbar,
+.banner {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* banner related styles */
+.banner-bg {
+    background-image: url(../images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.banner {
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.banner-title {
+    font-weight: 700;
+    font-size: 3.25rem;
+}
+
+.banner-description {
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+.banner-img img {
+    width: 100%;
+}
+
+/* responsive media query */
+@media screen and (max-width: 576px) {
+
+    .navbar,
+    .nav-links
+     {
+        flex-direction: column;
+    }
+
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .banner-content {
+        text-align: center;
+    }
+
+}
