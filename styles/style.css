@@ -38,7 +38,7 @@ main {
     margin: 0 auto;
 }
 
-main>section {
+main > section {
     margin-top: 130px;
     margin-bottom: 70px;
 }
@@ -144,18 +144,22 @@ main>section {
     padding: 16px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
-.product-title{
+
+.product-title {
     font-weight: 600;
     font-size: 1.75rem;
 }
-.product-price{
+
+.product-price {
     font-weight: 400;
     font-size: 1.5rem;
 }
+
 .product-image img {
     width: 100%;
 }
-.product-description{
+
+.product-description {
     font-weight: 700;
     font-size: 0.875rem;
 }
@@ -170,7 +174,8 @@ main>section {
     font-weight: 700;
     font-size: 0.875rem;
 }
-.section-end{
+
+.section-end {
     font-weight: 700;
     font-size: 1rem;
     color: #E02C6D;
@@ -178,10 +183,46 @@ main>section {
 }
 
 /* featured products related style */
-.featured-products-container{
-    display: flex;
+.featured-products-container {
     justify-content: space-between;
-    gap: 40px;
+    gap: 120px;
+}
+
+.featured-product-title {
+    font-weight: 700;
+    font-size: 2.375rem;
+}
+
+.featured-product-description {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.featured-product-btn {
+    border-radius: 0;
+}
+
+/* footer related styles */
+footer {
+    background-color: #191970;
+    color: white;
+    width: auto;
+}
+.footer-content{
+    text-align: center;
+    padding: 50px 0 50px 0;
+}
+.footer-title{
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.footer-description{
+    font-weight: 700;
+    font-size: 0.875rem;
+}
+.footer-logo-container{
+    font-weight: 900;
+    font-size: 1.5rem;
 }
 /* responsive media query */
 @media screen and (max-width: 576px) {
@@ -191,7 +232,8 @@ main>section {
         flex-direction: column;
     }
 
-    .banner {
+    .banner,
+    .featured-products-container {
         flex-direction: column-reverse;
     }
 
@@ -209,6 +251,12 @@ main>section {
     }
 
     .product {
+        width: 100%;
+    }
+    .featured-product-content{
+        text-align: center;
+    }
+    .featured-product-img img{
         width: 100%;
     }
 }
